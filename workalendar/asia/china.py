@@ -50,6 +50,16 @@ holidays = {
             'Mid-Autumn Festival': [(9, 29)],
             'National Day': [(9, 30)]
         },
+    2024:
+        {
+            'Spring Festival': [(2, 10), (2, 11), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17)],
+            'Ching Ming Festival':[(4,4),(4,5),(4,6)],
+            'Labour Day Holiday': [(5, 1), (5, 2), (5, 3), (5,4), (5, 5)],
+            'Dragon Boat Festival': [(6,8),(6, 9),(6,10)],
+            'Mid-Autumn Festival': [(9,15),(9,16),(9,17)],
+            'National Day': [(10, 1), (10, 2), (10, 3), (10, 4), (10, 5), (10, 6), (10, 7)],
+            'New year': [(1,1)]
+        }
 }
 
 workdays = {
@@ -95,6 +105,16 @@ workdays = {
             'Dragon Boat Festival Shift': [(6, 25)],
             'National Day Shift': [(10, 7), (10, 8)]
         },
+    2024:
+        {
+           'Spring Festival Shift': [(2, 4), (2,18)],
+           'Ching Ming Festival Shift': [(4,7)],
+           'Labour Day Holiday Shift': [(4,28), (5,11)],
+           'Dragon Boat Festival Shift':[],
+           'Mid-Autumn Festival Shift':[(9,14)],
+           'National Day Shift': [(9,29),(10,12)],
+           'New year Shift': []
+        }
 }
 
 
