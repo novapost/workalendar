@@ -121,7 +121,7 @@ workdays = {
 @iso_register('CN')
 class China(ChineseNewYearCalendar):
     "China"
-    # WARNING: Support 2018-2023 currently, need update every year.
+    # WARNING: Support 2018-2024 currently, need update every year.
     shift_new_years_day = True
     include_chinese_new_year_eve = True
 
@@ -135,10 +135,10 @@ class China(ChineseNewYearCalendar):
 
     def get_calendar_holidays(self, year):
         year_min, year_max = min(holidays), max(holidays)
-        warnings.warn(
-            f"Support years {year_min}-{year_max} currently, "
-            f"need update every year."
-        )
+        # warnings.warn(
+        #     f"Support years {year_min}-{year_max} currently, "
+        #     f"need update every year."
+        # )
         if year not in holidays:
             msg = f"Need configure {year} for China."
             raise CalendarError(msg)
