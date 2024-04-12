@@ -26,5 +26,6 @@ class Denmark(WesternCalendar):
 
     def get_variable_days(self, year):
         days = super().get_variable_days(year)
-        days.append((self.get_store_bededag(year), "Store Bededag"))
+        if year < 2024:
+            days.append((self.get_store_bededag(year), "Store Bededag"))
         return days

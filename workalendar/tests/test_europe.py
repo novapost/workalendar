@@ -457,18 +457,34 @@ class DenmarkTest(GenericCalendarTest):
 
     def test_year_2015(self):
         holidays = self.cal.holidays_set(2015)
-        self.assertIn(date(2015, 1, 1), holidays)    # nytaarsdag
-        self.assertIn(date(2015, 4, 2), holidays)    # skaertaarsdag
-        self.assertIn(date(2015, 4, 3), holidays)    # langfredag
-        self.assertIn(date(2015, 4, 5), holidays)    # paaskedag
+        self.assertIn(date(2015, 1, 1), holidays)    # Nytaarsdag
+        self.assertIn(date(2015, 4, 2), holidays)    # Skærtorsdag
+        self.assertIn(date(2015, 4, 3), holidays)    # Langfredag
+        self.assertIn(date(2015, 4, 5), holidays)    # Paaskedag
         self.assertIn(date(2015, 4, 6), holidays)    # 2. paaskedag
-        self.assertIn(date(2015, 5, 1), holidays)    # st bededag
-        self.assertIn(date(2015, 5, 14), holidays)   # kristi himmelfart
-        self.assertIn(date(2015, 5, 24), holidays)   # pinsedag
+        self.assertIn(date(2015, 5, 1), holidays)    # St bededag
+        self.assertIn(date(2015, 5, 14), holidays)   # Kristi himmelfart
+        self.assertIn(date(2015, 5, 24), holidays)   # Pinsedag
         self.assertIn(date(2015, 5, 25), holidays)   # 2. pinsedag
-        self.assertIn(date(2015, 12, 24), holidays)  # juleaftensdag
-        self.assertIn(date(2015, 12, 25), holidays)  # juledag
+        self.assertIn(date(2015, 12, 24), holidays)  # Juleaften
+        self.assertIn(date(2015, 12, 25), holidays)  # Juledag
         self.assertIn(date(2015, 12, 26), holidays)  # 2. juledag
+
+    def test_year_2024(self):
+        holidays = self.cal.holidays_set(2024)
+        self.assertIn(date(2024, 1, 1), holidays)    # Nytaarsdag
+        self.assertIn(date(2024, 3, 28), holidays)   # Skærtorsdag
+        self.assertIn(date(2024, 3, 29), holidays)   # Langfredag
+        self.assertIn(date(2024, 3, 31), holidays)   # Paaskedag
+        self.assertIn(date(2024, 4, 1), holidays)    # 2. paaskedag
+        # Store bededag is not a public holiday since 2024
+        self.assertNotIn(date(2024, 4, 26), holidays)
+        self.assertIn(date(2024, 5, 9), holidays)    # Kristi himmelfart
+        self.assertIn(date(2024, 5, 19), holidays)   # Pinsedag
+        self.assertIn(date(2024, 5, 20), holidays)   # 2. pinsedag
+        self.assertIn(date(2024, 12, 24), holidays)  # Juleaften
+        self.assertIn(date(2024, 12, 25), holidays)  # Juledag
+        self.assertIn(date(2024, 12, 26), holidays)  # 2. juledag
 
 
 class SlovakiaTest(GenericCalendarTest):
