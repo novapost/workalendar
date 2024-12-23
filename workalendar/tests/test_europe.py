@@ -1222,6 +1222,101 @@ class NetherlandsNorthWithSchoolHolidaysTest(GenericCalendarTest):
             christmas_holiday_end,
         )
 
+    def test_year_2025(self):
+        year = 2025
+        christmas_holiday_end = date(year, 1, 5)
+        spring_holiday_start = date(year, 2, 15)
+        may_holiday_start = date(year, 4, 26)
+        summer_holiday_start = date(year, 7, 12)
+        fall_holiday_start = date(year, 10, 18)
+        christmas_holiday_start = date(year, 12, 20)
+
+        self._test_school_holidays(
+            year,
+            christmas_holiday_start,
+            spring_holiday_start,
+            may_holiday_start,
+            summer_holiday_start,
+            fall_holiday_start,
+            christmas_holiday_end,
+        )
+
+    def test_year_2026(self):
+        year = 2026
+        christmas_holiday_end = date(year, 1, 4)
+        spring_holiday_start = date(year, 2, 21)
+        may_holiday_start = date(year, 4, 25)
+        summer_holiday_start = date(year, 7, 4)
+        fall_holiday_start = date(year, 10, 10)
+        christmas_holiday_start = date(year, 12, 19)
+
+        self._test_school_holidays(
+            year,
+            christmas_holiday_start,
+            spring_holiday_start,
+            may_holiday_start,
+            summer_holiday_start,
+            fall_holiday_start,
+            christmas_holiday_end,
+        )
+
+    def test_year_2027(self):
+        year = 2027
+        christmas_holiday_end = date(year, 1, 3)
+        spring_holiday_start = date(year, 2, 20)
+        may_holiday_start = date(year, 4, 24)
+        summer_holiday_start = date(year, 7, 10)
+        fall_holiday_start = date(year, 10, 16)
+        christmas_holiday_start = date(year, 12, 25)
+
+        self._test_school_holidays(
+            year,
+            christmas_holiday_start,
+            spring_holiday_start,
+            may_holiday_start,
+            summer_holiday_start,
+            fall_holiday_start,
+            christmas_holiday_end,
+        )
+
+    def test_year_2028(self):
+        year = 2028
+        christmas_holiday_end = date(year, 1, 9)
+        spring_holiday_start = date(year, 2, 19)
+        may_holiday_start = date(year, 4, 29)
+        summer_holiday_start = date(year, 7, 15)
+        fall_holiday_start = date(year, 10, 14)
+        christmas_holiday_start = date(year, 12, 23)
+
+        self._test_school_holidays(
+            year,
+            christmas_holiday_start,
+            spring_holiday_start,
+            may_holiday_start,
+            summer_holiday_start,
+            fall_holiday_start,
+            christmas_holiday_end,
+        )
+
+    def test_year_2029(self):
+        year = 2029
+        christmas_holiday_end = date(year, 1, 7)
+        spring_holiday_start = date(year, 2, 17)
+        may_holiday_start = date(year, 4, 28)
+        summer_holiday_start = date(year, 7, 21)
+        fall_holiday_start = date(year, 10, 20)
+        christmas_holiday_start = date(year, 12, 22)
+
+        self._test_school_holidays(
+            year,
+            christmas_holiday_start,
+            spring_holiday_start,
+            may_holiday_start,
+            summer_holiday_start,
+            fall_holiday_start,
+            christmas_holiday_end,
+        )
+
     def _test_school_holidays(
             self,
             year,
