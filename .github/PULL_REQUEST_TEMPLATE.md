@@ -28,11 +28,11 @@ For information, read and make sure you're okay with the [Contributing guideline
     - [ ] Add the "master / nothing to see here" in Changelog.md
     - [ ] Push & wait for the tests to be green
 - [ ] Merge --ff
-- Github stuff
+- GitHub stuff
     - [ ] Push tag in Github
-    - [ ] Edit release on Github using the changelog.
+    - [ ] Edit release on GitHub using the changelog.
     - [ ] Delete branch
 - [ ] upload release on PyPI using ``twine``
-- [ ] (*optional*) Make feeback on the various PR or issues.
+- [ ] (*optional*) Make feedback on the various PR or issues.
 
  -->

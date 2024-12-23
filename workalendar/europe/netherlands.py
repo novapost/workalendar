@@ -60,6 +60,11 @@ class Netherlands(WesternCalendar):
 
 
 FALL_HOLIDAYS_EARLY_REGIONS = {
+    2030: ["south"],  # best guess as of November 2023
+    2029: ["south"],
+    2028: ["north"],
+    2027: ["north", "middle"],
+    2026: ["north"],
     2025: ["south"],
     2024: ["south"],
     2023: ["middle", "south"],
@@ -73,6 +78,11 @@ FALL_HOLIDAYS_EARLY_REGIONS = {
 }
 
 SPRING_HOLIDAYS_EARLY_REGIONS = {
+    2030: ["north"],
+    2029: ["south"],
+    2028: ["north"],
+    2027: ["south"],
+    2026: ["middle", "south"],
     2025: ["north"],
     2024: ["south"],
     2023: ["south"],
@@ -86,6 +96,11 @@ SPRING_HOLIDAYS_EARLY_REGIONS = {
 }
 
 SUMMER_HOLIDAYS_EARLY_REGIONS = {
+    2030: ["south"],
+    2029: ["middle"],
+    2028: ["middle"],
+    2027: ["north"],
+    2026: ["north"],
     2025: ["south"],
     2024: ["south"],
     2023: ["middle"],
@@ -99,6 +114,11 @@ SUMMER_HOLIDAYS_EARLY_REGIONS = {
 }
 
 SUMMER_HOLIDAYS_LATE_REGIONS = {
+    2030: ["north"],
+    2029: ["north"],
+    2028: ["south"],
+    2027: ["south"],
+    2026: ["middle"],
     2025: ["middle"],
     2024: ["north"],
     2023: ["north"],
@@ -209,7 +229,7 @@ class NetherlandsWithSchoolHolidays(Netherlands):
         week = 9
 
         # Exceptional years
-        if year in [2024, 2021]:
+        if year in [2029, 2027, 2024, 2021]:
             week = 8
 
         # Holiday starts on the preceding Saturday
@@ -249,7 +269,7 @@ class NetherlandsWithSchoolHolidays(Netherlands):
         week = 18
 
         # Exceptional years
-        if year == 2017:
+        if year in [2027, 2017]:
             week = 17
 
         # Holiday starts on the preceding Saturday

@@ -3,6 +3,7 @@
 ## master (unreleased)
 
 - Coronation of His Majesty King Charles III Bank holiday in 2023 to the UK calendar.
+- New dates for school holidays in the Netherlands from 2026 until 20230.
 
 ## v17.0.0 (2023-01-01)
 
@@ -15,7 +16,7 @@
 
 - Update China's public holidays for 2023 (#728).
 - Removed compatibility with Python 3.6, also, removed tests & amended documentation (#705).
-- Upgraded `tox` usage, now compatble with tox 4+ (added `allowlist_externals`).
+- Upgraded `tox` usage, now compatible with tox 4+ (added `allowlist_externals`).
 - Added support for Python 3.10 (#706).
 - Added support for Python 3.11 (#732).
 - Refactor ``NetherlandsWithSchoolHolidays.get_christmas_holidays`` for simplicity and readability.
@@ -185,7 +186,7 @@
 
 ### Other changes
 
-- Switched from Travis CI to Github Actions for CI jobs, thanks to @mgu.
+- Switched from Travis CI to GitHub Actions for CI jobs, thanks to @mgu.
 - Added support of Python 3.9 (#557).
 - Changed from `setup.py` to a nice `setup.cfg` file, thanks @ewjoachim (#576).
 - Use the `setup.cfg` file in the key to cache in `ci.yml` file (#587).
@@ -623,7 +624,7 @@ Large work on global registry: refs #13, #96, #257 & #284.
 - Added a `keep_datetime` option to keep the original type of the input argument for both ``add_working_days()`` and ``sub_working_days()`` functions (#270).
 - Fixed usage examples of ``get_first_weekday_after()`` docstring + in code (calendars and tests) ; do not use magic values, use MON, TUE, etc (#271).
 - Turned Changelog into a Markdown file (#272).
-- Added basic usage documentation, hosted by Github pages.
+- Added basic usage documentation, hosted by GitHub pages.
 - Added advanced usage documentation.
 
 ## v2.5.0 (2018-06-14)
@@ -666,7 +667,7 @@ I have done a terrible mistake with the 1.3.0 release, and uploaded a defunct 2.
 
 ## v2.0.0 (2017-06-23)
 
-- Major refactor in the USA module. Each State is now an independant module, all of the Mixins were removed, all the possible corrections have been made, following the main Wikipedia page, and cross-checking with official sources when it was possible (#171).
+- Major refactor in the USA module. Each State is now an independent module, all of the Mixins were removed, all the possible corrections have been made, following the main Wikipedia page, and cross-checking with official sources when it was possible (#171).
 - Added District of Columbia in the USA module (#217).
 - Run tests with Python3.6 in CI (#210)
 - Small refactors / cleanups in the following calendars: Hungary, Iceland, Ireland, Latvia, Netherlands, Spain, Japan, Taiwan, Australia, Canada, USA (#209).
